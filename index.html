@@ -592,6 +592,30 @@
             </li>
           </ul>
         </div>
+        <form class="footer-font">
+          <label class="footer-title-label" for="email">Подпишитесь на рассылку</label>
+          <ul class="footer-input-list">
+            <li class="link footer-input-item">
+              <input
+                type="email"
+                name="email"
+                id="email"
+                placeholder="E-mail"
+                required
+                minlength="2"
+                class="footer-input"
+              />
+            </li>
+            <li class="link footer-input-item">
+              <button class="footer-form-btn" type="submit">
+                Подписаться
+                <svg class="footer-btn-svg" width="24" height="24">
+                  <use href="./symbol-defs.svg#icon-footer-telegram"></use>
+                </svg>
+              </button>
+            </li>
+          </ul>
+        </form>
       </div>
     </footer>
     <div class="backdrop is-hidden" data-modal>
@@ -601,6 +625,64 @@
             <use href="./symbol-defs.svg#icon-close"></use>
           </svg>
         </button>
+        <form class="register-form">
+          <strong class="register-text">Оставьте свои данные, мы вам перезвоним</strong>
+          <label class="register-name">
+            Имя
+            <div class="footer-icon-position">
+              <input class="footer-imput" type="text" name="text-name" required />
+              <svg class="register-name-svg-vector" width="12" height="12">
+                <use href="./symbol-defs.svg#icon-Vector"></use>
+              </svg>
+            </div>
+          </label>
+          <label class="register-name"
+            >Телефон
+            <div class="footer-icon-position">
+              <input class="footer-imput" type="tel" name="tel" required />
+              <svg class="register-name-svg-vector" width="13" height="13">
+                <use href="./symbol-defs.svg#icon-Vector-tel"></use>
+              </svg>
+            </div>
+          </label>
+          <label class="register-name"
+            >Почта
+            <div class="footer-icon-position">
+              <input class="footer-imput" type="email" name="email" required />
+              <svg class="register-name-svg-vector" width="15" height="12">
+                <use href="./symbol-defs.svg#icon-email-black"></use>
+              </svg>
+            </div>
+          </label>
+          <label class="register-name"
+            >Комментарий
+            <textarea
+              class="modal-textarea"
+              name="comentar"
+              cols="30"
+              rows="10"
+              placeholder="Введите текст"
+            ></textarea>
+          </label>
+          <label class="footer-check">
+            <input
+              class="form-chetbox-imput visually-hidden"
+              type="checkbox"
+              required
+              name="checkbox"
+            />
+            <span class="footer-icon-check">
+              <svg width="15" height="16">
+                <use href="./symbol-defs.svg#icon-check"></use>
+              </svg>
+            </span>
+            <span
+              >Соглашаюсь с рассылкой и принимаю
+              <a class="footer-contract" href="">Условия договора</a></span
+            >
+          </label>
+          <button class="footer-btn-send" type="submit">Отправить</button>
+        </form>
       </div>
     </div>
     <script src="./js/modal.js"></script>

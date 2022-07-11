@@ -328,6 +328,30 @@
             </li>
           </ul>
         </div>
+        <form class="footer-font">
+          <label class="footer-title-label" for="email">Подпишитесь на рассылку</label>
+          <ul class="footer-input-list">
+            <li class="link footer-input-item">
+              <input
+                type="email"
+                name="email"
+                id="email"
+                placeholder="E-mail"
+                required
+                minlength="2"
+                class="footer-input"
+              />
+            </li>
+            <li class="link footer-input-item">
+              <button class="footer-form-btn" type="submit">
+                Подписаться
+                <svg class="footer-btn-svg" width="24" height="24">
+                  <use href="./symbol-defs.svg#icon-footer-telegram"></use>
+                </svg>
+              </button>
+            </li>
+          </ul>
+        </form>
       </div>
     </footer>
     <script src="./js/modal.js"></script>

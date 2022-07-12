@@ -627,43 +627,44 @@
         </button>
         <form class="register-form">
           <strong class="register-text">Оставьте свои данные, мы вам перезвоним</strong>
-          <label class="register-name">
-            Имя
-            <div class="footer-icon-position">
-              <input class="footer-imput" type="text" name="text-name" required />
+          <ul>
+            <li class="link modal-list-register">
+              <label class="register-name" for="name"> Имя </label>
+              <input class="footer-imput" type="text" id="name" name="text-name" required />
+
               <svg class="register-name-svg-vector" width="12" height="12">
                 <use href="./symbol-defs.svg#icon-Vector"></use>
               </svg>
-            </div>
-          </label>
-          <label class="register-name"
-            >Телефон
-            <div class="footer-icon-position">
-              <input class="footer-imput" type="tel" name="tel" required />
+            </li>
+
+            <li class="link modal-list-register">
+              <label class="register-name" for="tele">Телефон</label>
+
+              <input class="footer-imput" type="tel" id="tele" name="tel" required />
               <svg class="register-name-svg-vector" width="13" height="13">
                 <use href="./symbol-defs.svg#icon-Vector-tel"></use>
               </svg>
-            </div>
-          </label>
-          <label class="register-name"
-            >Почта
-            <div class="footer-icon-position">
-              <input class="footer-imput" type="email" name="email" required />
+            </li>
+            <li class="link modal-list-register">
+              <label class="register-name" for="mail">Почта</label>
+
+              <input class="footer-imput" id="mail" type="email" name="email" required />
               <svg class="register-name-svg-vector" width="15" height="12">
                 <use href="./symbol-defs.svg#icon-email-black"></use>
               </svg>
-            </div>
-          </label>
-          <label class="register-name"
-            >Комментарий
-            <textarea
-              class="modal-textarea"
-              name="comentar"
-              cols="30"
-              rows="10"
-              placeholder="Введите текст"
-            ></textarea>
-          </label>
+            </li>
+            <li class="link">
+              <label class="register-name">Комментарий</label>
+
+              <textarea
+                class="modal-textarea"
+                name="comentar"
+                cols="30"
+                rows="10"
+                placeholder="Введите текст"
+              ></textarea>
+            </li>
+          </ul>
           <label class="footer-check">
             <input
               class="form-chetbox-imput visually-hidden"
@@ -676,7 +677,7 @@
                 <use href="./symbol-defs.svg#icon-check"></use>
               </svg>
             </span>
-            <span
+            <span class="footer-contract-text"
               >Соглашаюсь с рассылкой и принимаю
               <a class="footer-contract" href="">Условия договора</a></span
             >
